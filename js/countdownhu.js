@@ -1,1 +1,32 @@
-var _0xb37c=["\x67\x65\x74\x54\x69\x6D\x65","\x66\x6C\x6F\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x64\x65\x6D\x6F","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6E\x20","\xF3\x20","\x70\x20","\x6D\x70\x20","\x43\x6F\x69\x6E\x3A\x20\x53\x4B\x52\x3C\x62\x72\x3E\x20\x3C\x62\x72\x3E\x45\x78\x63\x68\x61\x6E\x67\x65\x3A\x20\x43\x72\x79\x70\x74\x6F\x70\x69\x61"];var countDownDate= new Date(Date.UTC(2018,2,11,19,0,0))[_0xb37c[0]]();var x=setInterval(function(){var _0x276dx3= new Date()[_0xb37c[0]]();var _0x276dx4=countDownDate- _0x276dx3;var _0x276dx5=Math[_0xb37c[1]](_0x276dx4/ (1000* 60* 60* 24));var _0x276dx6=Math[_0xb37c[1]]((_0x276dx4% (1000* 60* 60* 24))/ (1000* 60* 60));var _0x276dx7=Math[_0xb37c[1]]((_0x276dx4% (1000* 60* 60))/ (1000* 60));var _0x276dx8=Math[_0xb37c[1]]((_0x276dx4% (1000* 60))/ 1000);document[_0xb37c[4]](_0xb37c[3])[_0xb37c[2]]= _0x276dx5+ _0xb37c[5]+ _0x276dx6+ _0xb37c[6]+ _0x276dx7+ _0xb37c[7]+ _0x276dx8+ _0xb37c[8];if(_0x276dx4< 0){clearInterval(x);document[_0xb37c[4]](_0xb37c[3])[_0xb37c[2]]= _0xb37c[9]}},1000)
+// Set the date we're counting down to
+var countDownDate = new Date(Date.UTC(2018, 2, 11, 19, 0, 0)).getTime();
+//Year, Month - 1, Day, Hour, Minutes, Seconds
+//Month should be one less than in reality
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "n " + hours + "ó "
+  + minutes + "p " + seconds + "mp ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Coin: SKR<br> <br>Exchange: Cryptopia";
+  }
+}, 1000);
+
+//IMPORTANT: Obfuscate this javascript with https://javascriptobfuscator.com/Javascript-Obfuscator.aspx
