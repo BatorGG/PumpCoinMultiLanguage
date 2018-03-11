@@ -25,7 +25,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Coin: SKR<br> <br>Exchange: Cryptopia";
+    document.getElementById("demo").innerHTML = "Coin: 111<br> <br>Exchange: Cryptopia";
   }
 }, 1000);
 
