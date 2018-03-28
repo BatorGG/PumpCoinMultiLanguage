@@ -574,6 +574,23 @@ ul li {
 .next .btn {
 	margin-top: 30px;
 }
+
+.countdown p {
+	color: #ffffff;
+	margin-top: 30px;
+	font-size: 45px;
+}
+
+.countdown h3 {
+	color: #ffffff;
+	margin-top: 350px;
+
+}
+.countdown h4 {
+	color: #ffffff;
+	margin-top: 30px;
+
+}
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
