@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date(Date.UTC(2018, 2, 28, 21, 30, 0)).getTime();
+var countDownDate = new Date(Date.UTC(2018, 2, 28, 20, 30, 0)).getTime();
 //Year, Month - 1, Day, Hour, Minutes, Seconds
 //Month should be one less than in reality
 
